@@ -1,1 +1,1 @@
-# Solution to Fronendmentor challenges
+# Solution to Frontendmentor challenges
