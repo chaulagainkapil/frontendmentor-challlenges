@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image-2{
+    display: none;
+ }
+ 
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+}
+.main-box{
+    height: 98vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.product-card{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+}
+
+.text-box h1{
+    font-family: 'Fraunces', serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+.image-box img{
+    width: 300px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.text-box{
+    background-color: hsl(0, 0%, 100%);
+    padding: 35px;
+    border-radius: 0px 20px 20px 0px;
+    height: 480px;
+}
+
+.text-box-header{
+    text-transform: uppercase;
+    opacity: 50%;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.product-description{
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0.5;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    line-height: 22px;
+}
+
+.price-text{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.new-price{
+    color: hsl(158, 36%, 37%);
+    font-size: 34px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.previous-price{
+    text-decoration-line: line-through;
+    padding-left: 10px;
+    font-size: 13px;
+    opacity: 50%;
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 15px 32px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(158, 36%, 28%);
+}
+
+.button-text{
+    font-weight: 500;
+    font-size: medium;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.link-button{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (max-width: 650px){
+    .product-card{
+        flex-direction: column;
+        width: 90%;
+        height: 95%;
+    }
+    .image-box img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .image-1{
+        display: none;
+     }
+    .image-2{
+        display: block;
+     }
+    .text-box{
+        padding: 25px;
+        border-radius: 0px 0px 20px 20px;
+    }
+    .product-card{
+        margin: 20px;
+    }
+}

@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+.main-body{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.top-card{
+    display: flex;
+    flex-direction: row;
+    width: 55%;
+    border-radius: 5px;
+}
+.top-card>div{
+    padding: 40px;
+}
+.car-card-1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+}
+.car-card-2{
+    background-color: hsl(184, 100%, 22%);
+}
+.car-card-3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+}
+
+h3{
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-size: 36px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    line-height: 25px;
+}
+.car-card-2 img, .car-card-1 img, .car-card-3 img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.more-button{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+button{
+    background-color: hsl(0, 0%, 95%);
+    height: 50px;
+    width: 70%;
+    text-align: center;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+.button-icon{
+    cursor: pointer;
+}
+
+.button-orange{
+    color: hsl(31, 77%, 52%);
+}
+.button-blue{
+    color: hsl(184, 100%, 22%);
+}
+.button-green{
+    color: hsl(179, 100%, 13%);
+}
+
+.button-icon:hover{
+    border: 1px solid hsla(0, 0%, 100%, 0.75);
+}
+
+.button-blue:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsla(0, 0%, 100%, 0.75);
+} 
+
+.button-orange:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.button-green:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (max-width: 950px) { /*Fix this*/
+
+    .main-body{
+        height: auto;
+    }
+    .top-card{
+        height: 80%;
+        width: 85%;
+        flex-direction: column;
+        padding: 20px 40px 20px 40px;
+    }
+    .top-card>div{
+        padding: 40px;
+    }
+    .more-button{
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    .car-card-1{
+        border-radius: 10px 10px 0px 0px;
+    }
+    .car-card-3{
+        border-radius: 0px 0px 10px 10px;
+    }
+}

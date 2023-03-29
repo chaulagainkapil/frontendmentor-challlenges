@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+}
+
+.testimonials{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 4px;
+    flex-direction: column;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
